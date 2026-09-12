@@ -14,16 +14,20 @@
 }
 
 .product-card-media {
-  display: block;
-  aspect-ratio: 4 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 360px;
   overflow: hidden;
-  background: var(--bone-soft);
+  background: linear-gradient(180deg, #f2efe9 0%, #eae6de 100%);
+  padding: 22px;
 }
 
 .product-card-media img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   transition: transform 0.5s ease;
 }
 
@@ -75,4 +79,10 @@
   background: var(--forest);
   color: var(--bone-soft);
   border-color: var(--forest);
+}
+
+@media (max-width: 640px) {
+  .product-card-media {
+    height: 300px;
+  }
 }

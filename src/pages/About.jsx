@@ -37,7 +37,7 @@ export default function About() {
       <section className="section-tight">
         <div className="container about-split">
           <div className="rounded-img about-split-image">
-            <img src={fabricImg} alt="Skin Reset Serum on dark fabric" />
+            <img src={fabricImg} alt="Skin Reset Serum on dark fabric" style={{ aspectRatio: '415 / 945' }} />
           </div>
           <div>
             <p className="eyebrow">Brand Positioning</p>
@@ -89,7 +89,7 @@ export default function About() {
             <Link to="/shop" className="btn btn-primary">Shop the Line</Link>
           </div>
           <div className="rounded-img about-split-image">
-            <img src={handImg} alt="NOVAÉ Skin Reset Serum in hand" />
+            <img src={handImg} alt="NOVAÉ Skin Reset Serum in hand" style={{ aspectRatio: '300 / 390' }} />
           </div>
         </div>
       </section>

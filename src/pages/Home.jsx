@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom'
 import Hero from '../components/Hero.jsx'
 import ProductCard from '../components/ProductCard.jsx'
 import { products } from '../data/products.js'
-import lifestyleImg from '../assets/lifestyle-serum-face.jpg'
 import smileImg from '../assets/lifestyle-smile-1.jpg'
 import stonesImg from '../assets/product-stones.jpg'
+import spotlightImg from '../assets/product-shadow-studio.jpg'
+import lifestyleBanner from '../assets/lifestyle-bathroom.jpg'
 import './Home.css'
 
 const ingredients = [
@@ -56,7 +57,7 @@ export default function Home() {
         <section className="section-tight spotlight-section">
           <div className="container spotlight-grid">
             <div className="rounded-img spotlight-image">
-              <img src={heroProduct.image} alt={heroProduct.name} />
+              <img src={spotlightImg} alt={heroProduct.name} />
             </div>
             <div>
               <p className="eyebrow">Hero Product</p>
@@ -116,23 +117,25 @@ export default function Home() {
 
       {/* Lifestyle / testimonial section */}
       <section className="section lifestyle-section">
-        <div className="container lifestyle-grid">
-          <div className="rounded-img lifestyle-image lifestyle-image-tall">
-            <img src={lifestyleImg} alt="Applying NOVAÉ Skin Reset Serum" />
+        <div className="container">
+          <div className="lifestyle-banner">
+            <div className="rounded-img lifestyle-banner-image">
+              <img src={lifestyleBanner} alt="Applying NOVAÉ Skin Reset Serum at home" />
+            </div>
+            <div className="rounded-img lifestyle-badge">
+              <img src={smileImg} alt="NOVAÉ customer glow" />
+            </div>
           </div>
-          <div className="lifestyle-copy">
+          <div className="lifestyle-copy-centered center">
             <p className="eyebrow">Hydrate. Glow. Repeat.</p>
-            <h2 className="section-title" style={{ margin: '14px 0 26px' }}>
+            <h2 className="section-title" style={{ margin: '14px 0 20px' }}>
               &ldquo;A little bottle. A lot of glow.&rdquo;
             </h2>
-            <p className="section-sub" style={{ marginBottom: 28 }}>
+            <p className="section-sub center">
               Real routines, reset with NOVAÉ. Skin Reset Serum slots into whatever you&rsquo;re
               already doing — two minutes, morning and night, for skin that looks like it&rsquo;s
               having a better day.
             </p>
-            <div className="rounded-img lifestyle-image-small">
-              <img src={smileImg} alt="NOVAÉ customer glow" />
-            </div>
           </div>
         </div>
       </section>

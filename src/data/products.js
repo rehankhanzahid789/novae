@@ -1,9 +1,13 @@
 import productStones from '../assets/product-stones.jpg'
-import productStump from '../assets/product-box-stump.jpg'
 import productFabric from '../assets/product-dark-fabric.jpg'
 import productOrganic from '../assets/product-organic-dark.jpg'
 import productHand from '../assets/product-in-hand.jpg'
 import lifestyleFace from '../assets/lifestyle-serum-face.jpg'
+import productStumpPortrait from '../assets/product-stump-portrait.jpg'
+import productShadowStudio from '../assets/product-shadow-studio.jpg'
+import productStumpLandscape from '../assets/product-stump-landscape.jpg'
+import productOrganicTall from '../assets/product-organic-tall.jpg'
+import lifestyleBathroom from '../assets/lifestyle-bathroom.jpg'
 
 export const products = [
   {
@@ -17,8 +21,15 @@ export const products = [
       'A lightweight daily serum built to support the skin barrier, restore hydration, and leave skin looking calmer and more balanced. Niacinamide works to even tone and refine texture, hyaluronic acid pulls in moisture, and ceramides help lock it all in. Meet your skin\u2019s new favorite.',
     directions:
       'Apply 2\u20133 drops to clean, dry skin morning and night. Gently press into face and neck. Follow with moisturizer and SPF during the day.',
-    image: productStump,
-    gallery: [productStump, productStones, lifestyleFace, productHand],
+    image: productStumpPortrait,
+    gallery: [
+      productStumpPortrait,
+      productShadowStudio,
+      lifestyleBathroom,
+      productStumpLandscape,
+      productOrganicTall,
+      productHand,
+    ],
     hero: true,
   },
   {

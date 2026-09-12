@@ -45,7 +45,6 @@
 
 .about-split-image img {
   width: 100%;
-  aspect-ratio: 4/4.6;
   object-fit: cover;
 }
 
@@ -75,7 +74,7 @@
 
 .about-closing-image img {
   width: 100%;
-  aspect-ratio: 16/10;
+  aspect-ratio: 1920 / 1080;
   object-fit: cover;
 }
 

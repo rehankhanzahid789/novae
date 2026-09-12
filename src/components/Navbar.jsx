@@ -24,15 +24,17 @@ export default function Navbar() {
   return (
     <header className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="container navbar-inner">
-        <button className="nav-burger" onClick={() => setMenuOpen((v) => !v)} aria-label="Toggle menu">
-          <span />
-          <span />
-          <span />
-        </button>
+        <div className="nav-side nav-side-left">
+          <button className="nav-burger" onClick={() => setMenuOpen((v) => !v)} aria-label="Toggle menu">
+            <span />
+            <span />
+            <span />
+          </button>
 
-        <Link to="/" className="nav-logo" onClick={() => setMenuOpen(false)}>
-          <img src={logo} alt="NOVAÉ" />
-        </Link>
+          <Link to="/" className="nav-logo" onClick={() => setMenuOpen(false)}>
+            <img src={logo} alt="NOVAÉ" />
+          </Link>
+        </div>
 
         <nav className={`nav-links ${menuOpen ? 'nav-links-open' : ''}`}>
           {links.map((l) => (
@@ -52,11 +54,11 @@ export default function Navbar() {
           </div>
         </nav>
 
-        <div className="nav-actions">
-          <Link to="/login" className="nav-icon-link" aria-label="Account">
+        <div className="nav-side nav-side-right nav-actions">
+          <Link to="/login" className="nav-icon-btn" aria-label="Account">
             <UserIcon />
           </Link>
-          <Link to="/cart" className="nav-icon-link nav-cart" aria-label="Cart">
+          <Link to="/cart" className="nav-icon-btn nav-cart" aria-label="Cart">
             <BagIcon />
             {count > 0 && <span className="nav-cart-badge">{count}</span>}
           </Link>
@@ -68,7 +70,7 @@ export default function Navbar() {
 
 function UserIcon() {
   return (
-    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
       <circle cx="12" cy="8" r="4" />
       <path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" />
     </svg>
@@ -77,7 +79,7 @@ function UserIcon() {
 
 function BagIcon() {
   return (
-    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+    <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
       <path d="M6 8h12l1 13H5L6 8Z" />
       <path d="M9 8V6a3 3 0 0 1 6 0v2" />
     </svg>
