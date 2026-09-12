@@ -19,8 +19,10 @@ export default function About() {
       <section className="about-hero" style={{ backgroundImage: `url(${heroImg})` }}>
         <div className="about-hero-overlay" />
         <div className="container about-hero-content">
-          <p className="eyebrow" style={{ color: 'rgba(255,253,250,0.8)' }}>Our Story</p>
-          <h1 className="about-hero-title">Skincare, made simple again.</h1>
+          <div className="about-hero-text">
+            <p className="eyebrow" style={{ color: 'rgba(255,253,250,0.8)' }}>Our Story</p>
+            <h1 className="about-hero-title">Skincare, made simple again.</h1>
+          </div>
         </div>
       </section>
 
