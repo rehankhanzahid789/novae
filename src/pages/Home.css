@@ -1,0 +1,168 @@
+.story-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.story-image img {
+  width: 100%;
+  aspect-ratio: 4/3.2;
+  object-fit: cover;
+}
+
+.spotlight-section {
+  background: var(--bone-soft);
+}
+
+.spotlight-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.spotlight-image img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+
+.spotlight-meta {
+  font-size: 13px;
+  color: var(--espresso-60);
+  letter-spacing: 0.02em;
+  margin-bottom: 30px;
+}
+
+.spotlight-meta .dot {
+  margin: 0 10px;
+}
+
+.spotlight-ctas {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.spotlight-price {
+  font-family: var(--serif);
+  font-size: 28px;
+}
+
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.ingredient-card {
+  background: var(--white);
+  border: 1px solid var(--espresso-15);
+  border-radius: var(--radius-md);
+  padding: 36px 30px;
+}
+
+.ingredient-index {
+  font-family: var(--serif);
+  font-size: 15px;
+  color: var(--forest);
+  font-style: italic;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.ingredient-name {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.ingredient-copy {
+  font-size: 14.5px;
+  color: var(--espresso-60);
+}
+
+.row-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 44px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.lifestyle-section {
+  background: var(--espresso);
+}
+
+.lifestyle-section .eyebrow {
+  color: #cdb9ac;
+}
+
+.lifestyle-section .section-title,
+.lifestyle-section .section-sub {
+  color: var(--bone-soft);
+}
+
+.lifestyle-section .section-sub {
+  color: rgba(255, 253, 250, 0.72);
+}
+
+.lifestyle-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.lifestyle-image-tall img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+
+.lifestyle-image-small {
+  width: 180px;
+}
+
+.lifestyle-image-small img {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+
+.closing-cta {
+  background: var(--bone-soft);
+}
+
+@media (max-width: 900px) {
+  .story-grid,
+  .spotlight-grid,
+  .lifestyle-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .spotlight-grid > div:first-child {
+    order: 1;
+  }
+  .ingredients-grid,
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  .row-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .ingredients-grid,
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

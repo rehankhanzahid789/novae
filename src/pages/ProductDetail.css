@@ -1,0 +1,154 @@
+.pd-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+.pd-main-image img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.pd-thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.pd-thumb {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 2px solid transparent;
+  background: none;
+  padding: 0;
+  aspect-ratio: 1/1;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, border-color 0.2s ease;
+}
+
+.pd-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pd-thumb-active,
+.pd-thumb:hover {
+  opacity: 1;
+  border-color: var(--forest);
+}
+
+.pd-title {
+  font-size: 42px;
+  margin: 10px 0 12px;
+}
+
+.pd-claim {
+  font-size: 16px;
+  color: var(--espresso-60);
+  margin-bottom: 18px;
+  max-width: 440px;
+}
+
+.pd-price {
+  font-family: var(--serif);
+  font-size: 28px;
+}
+
+.pd-ingredients {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.pd-purchase-row {
+  display: flex;
+  gap: 16px;
+}
+
+.qty-stepper {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--espresso-15);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.qty-stepper button {
+  background: none;
+  width: 42px;
+  height: 52px;
+  font-size: 18px;
+  color: var(--espresso);
+}
+
+.qty-stepper button:hover {
+  background: var(--bone-soft);
+}
+
+.qty-stepper span {
+  width: 32px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.pd-add {
+  flex: 1;
+}
+
+.pd-add.is-added {
+  background: var(--espresso);
+}
+
+.pd-tabs {
+  margin-top: 40px;
+}
+
+.pd-tab-headers {
+  display: flex;
+  gap: 28px;
+  border-bottom: 1px solid var(--espresso-15);
+  margin-bottom: 20px;
+}
+
+.pd-tab-headers button {
+  background: none;
+  padding: 0 0 14px;
+  font-size: 12.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--espresso-60);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.pd-tab-active {
+  color: var(--forest) !important;
+  border-bottom-color: var(--forest) !important;
+}
+
+.pd-tab-body {
+  color: var(--espresso-60);
+  font-size: 15px;
+  max-width: 480px;
+}
+
+.pd-related {
+  background: var(--bone-soft);
+}
+
+@media (max-width: 900px) {
+  .pd-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .pd-related .products-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
