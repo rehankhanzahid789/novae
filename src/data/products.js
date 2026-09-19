@@ -1,13 +1,12 @@
-import productStones from '../assets/product-stones.jpg'
-import productFabric from '../assets/product-dark-fabric.jpg'
-import productOrganic from '../assets/product-organic-dark.jpg'
-import productHand from '../assets/product-in-hand.jpg'
-import lifestyleFace from '../assets/lifestyle-serum-face.jpg'
-import productStumpPortrait from '../assets/product-stump-portrait.jpg'
-import productShadowStudio from '../assets/product-shadow-studio.jpg'
-import productStumpLandscape from '../assets/product-stump-landscape.jpg'
-import productOrganicTall from '../assets/product-organic-tall.jpg'
-import lifestyleBathroom from '../assets/lifestyle-bathroom.jpg'
+import serumMain from '../assets/product-serum-main.jpg'
+import serumSide from '../assets/product-serum-side.jpg'
+import serumClose from '../assets/product-serum-close.jpg'
+import sunblockMain from '../assets/product-sunblock-main.jpg'
+import sunblockSquare1 from '../assets/product-sunblock-square-1.jpg'
+import sunblockSquare2 from '../assets/product-sunblock-square-2.jpg'
+import eyecreamMain from '../assets/product-eyecream-main.jpg'
+import eyecreamOpen from '../assets/product-eyecream-open.jpg'
+import eyecreamBox from '../assets/product-eyecream-box.jpg'
 
 export const products = [
   {
@@ -15,51 +14,44 @@ export const products = [
     name: 'Skin Reset Serum',
     claim: 'Your daily serum, made for better skin days.',
     price: 58,
-    size: '30ml / 1.01 fl.oz.',
+    size: '30 ml / 1.01 fl. oz.',
     ingredients: ['Niacinamide', 'Hyaluronic Acid', 'Ceramides'],
     description:
-      'A lightweight daily serum built to support the skin barrier, restore hydration, and leave skin looking calmer and more balanced. Niacinamide works to even tone and refine texture, hyaluronic acid pulls in moisture, and ceramides help lock it all in. Meet your skin\u2019s new favorite.',
+      'A daily hydrating serum with Niacinamide, Hyaluronic Acid and Ceramides. Helps support the skin barrier, improve hydration and leave skin looking smoother and refreshed.',
     directions:
-      'Apply 2\u20133 drops to clean, dry skin morning and night. Gently press into face and neck. Follow with moisturizer and SPF during the day.',
-    image: productStumpPortrait,
-    gallery: [
-      productStumpPortrait,
-      productShadowStudio,
-      lifestyleBathroom,
-      productStumpLandscape,
-      productOrganicTall,
-      productHand,
-    ],
+      'Apply 2\u20133 drops to clean, dry skin. Gently pat until absorbed. Use morning and night before moisturizer.',
+    image: serumMain,
+    gallery: [serumMain, serumSide, serumClose],
     hero: true,
   },
   {
-    id: 'barrier-repair-cream',
-    name: 'Barrier Repair Cream',
-    claim: 'Rich hydration, without the heaviness.',
-    price: 46,
-    size: '50ml / 1.7 fl.oz.',
-    ingredients: ['Ceramides', 'Squalane', 'Shea Butter'],
+    id: 'daily-sun-block',
+    name: 'Daily Sun Block',
+    claim: 'Everyday SPF 50+, without the heavy feel.',
+    price: 34,
+    size: '50 ml / 1.69 fl. oz.',
+    ingredients: ['Niacinamide', 'Vitamin E', 'Centella Asiatica'],
     description:
-      'A cushiony daily moisturizer designed to work alongside Skin Reset Serum. It reinforces the skin barrier with ceramides and squalane, sealing in hydration for a soft, plump, resilient finish \u2014 morning or night.',
+      'Lightweight broad-spectrum SPF 50+ sun protection for everyday use. Helps protect skin from UVA/UVB rays while Niacinamide, Vitamin E and Centella Asiatica help keep skin calm and comfortable.',
     directions:
-      'Warm a small amount between fingertips and press into face and neck as the last step of your routine, morning and night.',
-    image: productFabric,
-    gallery: [productFabric, productHand, productStones],
+      'Apply generously to face and neck 15 minutes before sun exposure. Reapply every 2 hours, especially after sweating or swimming.',
+    image: sunblockMain,
+    gallery: [sunblockMain, sunblockSquare1, sunblockSquare2],
     hero: false,
   },
   {
-    id: 'gentle-reset-cleanser',
-    name: 'Gentle Reset Cleanser',
-    claim: 'A clean start, every single day.',
-    price: 32,
-    size: '120ml / 4.06 fl.oz.',
-    ingredients: ['Amino Acids', 'Oat Extract', 'Panthenol'],
+    id: 'under-eye-cream',
+    name: 'Under Eye Cream',
+    claim: 'Refresh tired eyes, morning and night.',
+    price: 38,
+    size: '15 ml / 0.50 fl. oz.',
+    ingredients: ['Caffeine', 'Peptides', 'Hyaluronic Acid', 'Niacinamide'],
     description:
-      'A soft, non-stripping cleanser that clears away the day without disrupting the skin barrier. Amino acids and oat extract keep the wash feeling calm and comfortable, so skin is left clean, soft, and ready for what comes next.',
+      'A lightweight eye cream designed to refresh tired-looking eyes. Caffeine, Peptides, Hyaluronic Acid and Niacinamide help reduce the appearance of puffiness, hydrate and smooth the under-eye area.',
     directions:
-      'Massage onto damp skin morning and night, then rinse with lukewarm water. Follow with Skin Reset Serum.',
-    image: productOrganic,
-    gallery: [productOrganic, productStones, lifestyleFace],
+      'Apply a small amount under each eye morning and night. Gently tap with your fingertip until absorbed. Avoid direct contact with eyes.',
+    image: eyecreamMain,
+    gallery: [eyecreamMain, eyecreamOpen, eyecreamBox],
     hero: false,
   },
 ]

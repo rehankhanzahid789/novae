@@ -21,10 +21,31 @@ export default function Footer() {
           <img src={logo} alt="NOVAÉ" className="footer-logo" />
           <p className="footer-tagline">Reset. Repair. Glow.</p>
 
-          <div className="footer-social">
-            <a href="#" aria-label="Instagram" className="footer-icon"><InstagramIcon /></a>
-            <a href="#" aria-label="TikTok" className="footer-icon"><TikTokIcon /></a>
-            <a href="#" aria-label="Pinterest" className="footer-icon"><PinterestIcon /></a>
+          <div className="footer-credits">
+            <a
+              href="https://www.linkedin.com/in/dev-rehan-zahid/"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-credit-link"
+            >
+              <LinkedInIcon />
+              <span>
+                <strong>Rehan Zahid</strong>
+                <em>Developer</em>
+              </span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/laraibkhalid-/"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-credit-link"
+            >
+              <LinkedInIcon />
+              <span>
+                <strong>Laraib Khalid</strong>
+                <em>Designer</em>
+              </span>
+            </a>
           </div>
         </div>
 
@@ -32,6 +53,8 @@ export default function Footer() {
           <p className="footer-heading">Shop</p>
           <Link to="/shop">All Products</Link>
           <Link to="/product/skin-reset-serum">Skin Reset Serum</Link>
+          <Link to="/product/daily-sun-block">Daily Sun Block</Link>
+          <Link to="/product/under-eye-cream">Under Eye Cream</Link>
           <Link to="/cart">Cart</Link>
         </div>
 
@@ -73,28 +96,10 @@ export default function Footer() {
   )
 }
 
-function InstagramIcon() {
+function LinkedInIcon() {
   return (
-    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <rect x="3" y="3" width="18" height="18" rx="5" />
-      <circle cx="12" cy="12" r="4" />
-      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-    </svg>
-  )
-}
-function TikTokIcon() {
-  return (
-    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path d="M14 4v9.5a3.5 3.5 0 1 1-3-3.46" />
-      <path d="M14 4c.4 2.4 2 4 4.5 4.2" />
-    </svg>
-  )
-}
-function PinterestIcon() {
-  return (
-    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <circle cx="12" cy="12" r="9" />
-      <path d="M9.5 18c1-3 1.5-5.5 1.5-7a3 3 0 1 1 3 3c-1 0-1.7-.4-2-1" />
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5ZM3 9.98h4V21H3V9.98ZM9.5 9.98H13v1.51h.05c.5-.9 1.7-1.85 3.5-1.85 3.75 0 4.45 2.4 4.45 5.53V21h-4v-5.3c0-1.27-.02-2.9-1.78-2.9-1.78 0-2.05 1.37-2.05 2.8V21h-4V9.98Z" />
     </svg>
   )
 }

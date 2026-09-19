@@ -110,4 +110,52 @@
   .about-values-grid {
     grid-template-columns: 1fr 1fr;
   }
+  .about-credits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-credits-section {
+  background: var(--bone-soft, #f4f1ec);
+}
+
+.about-credits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.about-credit-card {
+  background: #fff;
+  border-radius: var(--radius-lg, 24px);
+  padding: 36px 32px;
+  border: 1px solid rgba(82, 59, 49, 0.08);
+}
+
+.about-credit-role {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--forest);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.about-credit-name {
+  font-size: 26px;
+  margin-bottom: 18px;
+}
+
+.about-credit-quote {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.about-credit-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--espresso);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }

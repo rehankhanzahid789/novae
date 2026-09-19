@@ -109,6 +109,55 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <section className="section-tight about-credits-section">
+        <div className="container">
+          <div className="center" style={{ maxWidth: 560, marginBottom: 48 }}>
+            <p className="eyebrow">Behind NOVAÉ</p>
+            <h2 className="section-title" style={{ margin: '14px 0' }}>Designed &amp; built by</h2>
+          </div>
+          <div className="about-credits-grid">
+            <div className="about-credit-card">
+              <p className="about-credit-role">Brand &amp; Packaging Design</p>
+              <h3 className="about-credit-name">Laraib Khalid</h3>
+              <p className="section-sub about-credit-quote">
+                The NOVAÉ idea is designed by Laraib Khalid. &ldquo;NOVAÉ is a conceptual modern
+                skincare brand built around the idea of giving your skin a reset. I developed the
+                identity and packaging for its hero Skin Reset Serum, combining skincare science
+                with a clean, approachable visual language. The design uses minimal typography,
+                soft neutrals, and a structured information hierarchy to create packaging that
+                feels premium, trustworthy, and easy to understand.&rdquo;
+              </p>
+              <a
+                href="https://www.linkedin.com/in/laraibkhalid-/"
+                target="_blank"
+                rel="noreferrer"
+                className="about-credit-link"
+              >
+                View LinkedIn &rarr;
+              </a>
+            </div>
+
+            <div className="about-credit-card">
+              <p className="about-credit-role">Design &amp; Development</p>
+              <h3 className="about-credit-name">Rehan Zahid</h3>
+              <p className="section-sub about-credit-quote">
+                NOVAÉ is built by Rehan Zahid, a solo developer who designs and builds independent
+                web products from the ground up — from brand identity through to a fully working
+                storefront like this one.
+              </p>
+              <a
+                href="https://www.linkedin.com/in/dev-rehan-zahid/"
+                target="_blank"
+                rel="noreferrer"
+                className="about-credit-link"
+              >
+                View LinkedIn &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

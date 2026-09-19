@@ -57,9 +57,11 @@ export default function Navbar() {
         <div className="nav-side nav-side-right nav-actions">
           <Link to="/login" className="nav-icon-btn" aria-label="Account">
             <UserIcon />
+            <span className="nav-icon-label">Log In</span>
           </Link>
           <Link to="/cart" className="nav-icon-btn nav-cart" aria-label="Cart">
             <BagIcon />
+            <span className="nav-icon-label">Cart</span>
             {count > 0 && <span className="nav-cart-badge">{count}</span>}
           </Link>
         </div>

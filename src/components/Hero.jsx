@@ -17,6 +17,9 @@ export default function Hero() {
             <Link to="/shop" className="btn btn-primary">Shop Now</Link>
             <Link to="/about" className="btn btn-ghost-light">Our Story</Link>
           </div>
+          <p className="hero-credit">
+            Designed by <Link to="/about">Laraib Khalid</Link> &middot; Built by <Link to="/about">Rehan Zahid</Link>
+          </p>
         </div>
         <div className="hero-image">
           <img src={faceImg} alt="Applying NOVAÉ Skin Reset Serum" />

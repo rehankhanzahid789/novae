@@ -93,12 +93,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   position: relative;
-  width: 42px;
   height: 42px;
-  border-radius: 50%;
+  padding: 0 18px 0 14px;
+  border-radius: 999px;
   background: var(--forest-10);
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-icon-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 .nav-icon-btn:hover {
@@ -109,8 +117,8 @@
 
 .nav-cart-badge {
   position: absolute;
-  top: -3px;
-  right: -3px;
+  top: -6px;
+  right: -6px;
   background: var(--forest);
   color: var(--bone-soft);
   font-size: 10px;
@@ -148,6 +156,17 @@
 
 .nav-links-mobile-extra {
   display: none;
+}
+
+@media (max-width: 1050px) and (min-width: 861px) {
+  .nav-icon-btn {
+    padding: 0;
+    width: 42px;
+    gap: 0;
+  }
+  .nav-icon-label {
+    display: none;
+  }
 }
 
 @media (max-width: 860px) {
