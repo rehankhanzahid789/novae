@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import heroImg from '../assets/product-serum-close.jpg'
-import fabricImg from '../assets/product-dark-fabric.jpg'
-import handImg from '../assets/product-in-hand.jpg'
+import fabricImg from '../assets/product-dark-fabric1.jpg'
+import handImg from '../assets/product-eyecream-open.jpg'
 import bagImg from '../assets/brand-bag.jpg'
 import './About.css'
 
