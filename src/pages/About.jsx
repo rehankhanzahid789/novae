@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import heroImg from '../assets/product-serum-close.jpg'
 import fabricImg from '../assets/product-dark-fabric1.jpg'
 import handImg from '../assets/product-eyecream-open.jpg'
 import bagImg from '../assets/brand-bag.jpg'
@@ -16,7 +15,7 @@ const values = [
 export default function About() {
   return (
     <div className="about-page">
-      <section className="about-hero" style={{ backgroundImage: `url(${heroImg})` }}>
+      <section className="about-hero">
         <div className="about-hero-overlay" />
         <div className="container about-hero-content">
           <div className="about-hero-text">

@@ -127,16 +127,17 @@
 .lifestyle-badge {
   position: absolute;
   left: 40px;
-  bottom: -48px;
-  width: 156px;
+  bottom: -40px;
+  width: 210px;
+  background: var(--espresso);
   border: 4px solid var(--espresso);
   box-shadow: 0 20px 36px -14px rgba(0, 0, 0, 0.5);
 }
 
 .lifestyle-badge img {
   width: 100%;
-  aspect-ratio: 400 / 420;
-  object-fit: cover;
+  aspect-ratio: 359 / 264;
+  object-fit: contain;
 }
 
 .lifestyle-copy-centered {
@@ -167,9 +168,9 @@
     gap: 16px;
   }
   .lifestyle-badge {
-    width: 112px;
+    width: 150px;
     left: 24px;
-    bottom: -34px;
+    bottom: -28px;
   }
   .lifestyle-banner {
     margin-bottom: 58px;

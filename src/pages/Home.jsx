@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Hero from '../components/Hero.jsx'
 import ProductCard from '../components/ProductCard.jsx'
 import { products } from '../data/products.js'
-import smileImg from '../assets/lifestyle-smile-1.jpg'
+import badgeLogo from '../assets/novae-badge-logo.png'
 import stonesImg from '../assets/product-stones.jpg'
 import spotlightImg from '../assets/product-shadow-studio.jpg'
 import lifestyleBanner from '../assets/lifestyle-bathroom.jpg'
@@ -123,7 +123,7 @@ export default function Home() {
               <img src={lifestyleBanner} alt="Applying NOVAÉ Skin Reset Serum at home" />
             </div>
             <div className="rounded-img lifestyle-badge">
-              <img src={smileImg} alt="NOVAÉ customer glow" />
+              <img src={badgeLogo} alt="NOVAÉ logo" />
             </div>
           </div>
           <div className="lifestyle-copy-centered center">

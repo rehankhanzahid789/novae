@@ -1,22 +1,18 @@
 .about-hero {
   position: relative;
   min-height: 88vh;
-  background-size: cover;
-  background-position: center 38%;
   display: flex;
   align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--espresso) 0%, #3d2b22 45%, var(--forest) 100%);
 }
 
 .about-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    120deg,
-    rgba(20, 15, 12, 0.72) 0%,
-    rgba(20, 15, 12, 0.5) 32%,
-    rgba(20, 15, 12, 0.22) 55%,
-    rgba(20, 15, 12, 0.28) 100%
-  );
+  background:
+    radial-gradient(ellipse at 82% 18%, rgba(234, 230, 222, 0.16) 0%, rgba(234, 230, 222, 0) 55%),
+    radial-gradient(ellipse at 12% 88%, rgba(41, 70, 55, 0.55) 0%, rgba(41, 70, 55, 0) 62%);
 }
 
 .about-hero-content {
@@ -39,7 +35,6 @@
 @media (max-width: 900px) {
   .about-hero {
     min-height: 78vh;
-    background-position: center 32%;
   }
 }
 
@@ -168,7 +163,6 @@
 @media (max-width: 640px) {
   .about-hero {
     min-height: 46vh;
-    background-position: center 45%;
   }
   .about-credit-card {
     padding: 28px 22px;
