@@ -112,9 +112,6 @@
   .about-values-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .about-credits-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .about-credits-section {
@@ -160,4 +157,20 @@
   color: var(--espresso);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .about-credits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-hero {
+    min-height: 46vh;
+    background-position: center 45%;
+  }
+  .about-credit-card {
+    padding: 28px 22px;
+  }
 }
