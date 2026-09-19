@@ -2,7 +2,7 @@
   position: relative;
   min-height: 88vh;
   background-size: cover;
-  background-position: center 30%;
+  background-position: center 38%;
   display: flex;
   align-items: center;
 }
@@ -39,7 +39,7 @@
 @media (max-width: 900px) {
   .about-hero {
     min-height: 78vh;
-    background-position: center 20%;
+    background-position: center 32%;
   }
 }
 
